@@ -38,6 +38,9 @@ return require('packer').startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
+  -- LSP
+  use 'neovim/nvim-lspconfig'
+
   -- Auto pairs
   use('jiangmiao/auto-pairs')
   use('tpope/vim-surround')
