@@ -24,4 +24,5 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-vim.g.clipboard="wl-copy"
+vim.g.clipboard="tmux"
+--vim.g.clipboard="wl-copy"

@@ -1,14 +1,5 @@
-require('mason').setup()
-require('mason-lspconfig').setup({
-    ensure_installed = {
-        'cmake',
-        'clangd',
-        'gopls',
-        'rust_analyzer',
-        -- Manually run
-        -- :MasonInstall typescript-language-server
-    }
-})
+local lspconfig = require("lspconfig")
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local on_attach = function(_, _)
     vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
@@ -56,8 +47,16 @@ vim.diagnostic.config({
   },
 })
 
-local lspconfig = require("lspconfig")
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local servers = {
+    'cmake',
+    'clangd',
+    'gopls',
+    'rust_analyzer',
+}
+require('mason').setup()
+require('mason-lspconfig').setup({
+    ensure_installed = servers
+})
 --lspconfig.cmake.setup {}
 --lspconfig.clangd.setup {}
 --lspconfig.gopls.setup {}
