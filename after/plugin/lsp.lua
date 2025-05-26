@@ -52,6 +52,7 @@ local servers = {
     'clangd',
     'gopls',
     'rust_analyzer',
+    'pylsp',
 }
 require('mason').setup()
 require('mason-lspconfig').setup({
