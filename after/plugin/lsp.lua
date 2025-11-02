@@ -1,7 +1,7 @@
 local lspconfig = require("lspconfig")
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local on_attach = function(_, _)
+local on_attach = function(client, bufnr)
     vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
 
@@ -53,6 +53,8 @@ local servers = {
     'gopls',
     'rust_analyzer',
     'pylsp',
+    'ts_ls',
+    'html',
 }
 require('mason').setup()
 require('mason-lspconfig').setup({
@@ -61,4 +63,5 @@ require('mason-lspconfig').setup({
 --lspconfig.cmake.setup {}
 --lspconfig.clangd.setup {}
 --lspconfig.gopls.setup {}
---lspconfig.rust_analyzer.setup{}
+--lspconfig.rust_analyzer.setup
+

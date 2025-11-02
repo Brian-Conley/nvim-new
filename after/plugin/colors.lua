@@ -31,3 +31,6 @@ SetColor()
 vim.cmd [[
   highlight ColorColumn ctermbg=DarkGrey guibg=#3c3c3c
 ]]
+
+vim.cmd.highlight('IndentLine guifg=#402040')
+vim.cmd.highlight('IndentLineCurrent guifg=#804080')

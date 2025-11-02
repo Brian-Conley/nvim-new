@@ -45,4 +45,7 @@ return require('packer').startup(function(use)
   use('jiangmiao/auto-pairs')
   use('tpope/vim-surround')
 
+  -- Indent Guide
+  use('nvimdev/indentmini.nvim')
+
 end)
