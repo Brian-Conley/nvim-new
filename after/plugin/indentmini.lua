@@ -1,3 +1,3 @@
 require("indentmini").setup({
-    minlevel = 3
+    minlevel = 2
 })

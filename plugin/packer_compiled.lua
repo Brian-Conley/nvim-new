@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/bc/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cmp-snippy"] = {
+    loaded = true,
+    path = "/home/bc/.local/share/nvim/site/pack/packer/start/cmp-snippy",
+    url = "https://github.com/dcampos/cmp-snippy"
+  },
   harpoon = {
     loaded = true,
     path = "/home/bc/.local/share/nvim/site/pack/packer/start/harpoon",

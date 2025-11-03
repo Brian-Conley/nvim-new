@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
 
   -- Snippets
   use('dcampos/nvim-snippy')
+  use('dcampos/cmp-snippy')
 
   -- Mason
   use 'williamboman/mason.nvim'
@@ -47,5 +48,4 @@ return require('packer').startup(function(use)
 
   -- Indent Guide
   use('nvimdev/indentmini.nvim')
-
 end)
