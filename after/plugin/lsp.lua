@@ -1,3 +1,4 @@
+--[[
 _G.LSP_CAPABILITIES = require('cmp_nvim_lsp').default_capabilities()
 
 _G.ON_ATTACH = function(client, bufnr)
@@ -12,3 +13,4 @@ _G.ON_ATTACH = function(client, bufnr)
     vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, opts)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
 end
+]]
