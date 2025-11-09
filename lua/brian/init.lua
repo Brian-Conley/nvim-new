@@ -1,6 +1,7 @@
 require("brian.set")
 require("brian.keymap")
 require("brian.lazy_init")
+require("brian.color")
 
 local augroup = vim.api.nvim_create_augroup
 local BrianGroup = augroup('Brian', {})
