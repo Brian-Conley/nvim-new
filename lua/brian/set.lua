@@ -28,4 +28,8 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.clipboard="tmux"
+
+vim.o.foldmethod = "indent"
+vim.opt.foldenable = false
+
 --vim.g.clipboard="wl-copy"
